@@ -8,7 +8,8 @@ header {
     top: 0;
     z-index: 2;
 }
-.toggle{
+
+.toggle {
     visibility: hidden;
     position: absolute;
 }
@@ -68,7 +69,7 @@ header {
 }
 
 .introSec {
-    height: 55vh;
+    height: 390px;
     width: 100%;
     margin-top: 70px;
     top: 0;
@@ -83,7 +84,7 @@ header {
     background-image: url('https://q-xx.bstatic.com/xdata/images/xphoto/2880x868/246996410.jpeg?k=287d9d13a66a9f43bb033d9eae275b0f68cea77f9e86a40de6cdf5602c35aa56&o=');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 55vh;
+    height: 390px;
     width: 100%;
 }
 
@@ -113,9 +114,10 @@ header {
 }
 
 .searchPlace {
-    width: 100%;
     padding: 5px;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     gap: 5px;
     border-radius: 6px;
     background-color: rgb(90, 90, 178);
@@ -124,21 +126,23 @@ header {
 }
 
 .searchPlace input {
-    width: 29%;
     padding: 17px;
     border-radius: 7px;
     outline: none;
     border: none;
     font-weight: bold;
+    flex-grow: 1;
 }
 
 .searchPlace button {
-    width: 13%;
     border-radius: 7px;
+    padding: 7px;
     outline: none;
     border: none;
     font-weight: bold;
     transition: .3s;
+    flex-grow: 1;
+
 }
 
 .roomsSec {
@@ -151,6 +155,7 @@ header {
 .roomsAndPlace {
     width: 68%;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .filters {
@@ -162,7 +167,6 @@ header {
 }
 
 .stayType {
-    width: 100%;
     border-radius: 10px;
     padding: 10px;
     margin: 13px 0;
@@ -216,34 +220,32 @@ header {
 }
 
 .roomDetails {
-    width: 100%;
-    height: 250px;
     margin: 11px 0;
+    padding: 10px 40px;
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     gap: 30px;
     border: 1px solid gray;
     border-radius: 10px;
-    padding: 10px;
-    justify-content: space-between;
     background-color: rgb(227, 225, 225);
+    justify-content: space-around;
 
 }
 
 .roomImg {
-    width: 30%;
-    height: 100%;
+    width: 250px;
 }
 
 .roomDetails img {
-    height: 100%;
+    width: 100%;
+    margin: 10px 0;
     border-radius: 10px;
 }
 
 .roomnames {
-    width: 70%;
     display: flex;
     flex-direction: column;
+    width: 300px;
     gap: 15;
     padding: 7px 10px 0;
 }
@@ -265,7 +267,7 @@ header {
 }
 
 .roomnames button {
-    transform: translate(-5px, 15px);
+    margin-top: 7px;
 }
 
 .stayType:hover {
@@ -291,128 +293,110 @@ header {
 
 @media screen and (max-width: 600px) {
 
-    .searchPlace {
-        flex-direction: column;
-        transform: translate(0, -30px);
-    }
-    .introContent {
-        width: 68%;
-        height: 75%;
-    
-    }
-    .introContent p{
-        display: none;
-    }
-    .introContent h3{
-        font-size: 25px;
-    }
-
-    .searchPlace input {
-        width: 100%;
-        padding: 9px;
-    }
-
-    .searchPlace button {
-        width: 100%;
-        background-color: rgb(50, 50, 209);
-        color: white;
-    }
-    .roomsAndPlace {
-        width: 90%;
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .filters {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        overflow-x: scroll;
-    }
-    .filters img{
-        height: auto;
-        width: 200px;
-    }
-    .rooms {
-        width: 100%;
-        display: flex;
-        padding:0;
-        flex-direction: column;
-        gap: 15px;
-    }
     .roomDetails {
-        margin: auto;
-        width: 80%;
-        height: 70vh;
-        margin-top: 11px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 0px;
+        margin: 11px 20px;
     }
-    .roomImg {
-        width: 100%;
-        height: 40%;
-        display: flex;
-        overflow: hidden;
-        justify-content: center;
-    }
-    .roomImg img{
-        width: 70%;
-        height: auto;
-    }
+
     .roomnames {
-        width: 70%;
         display: flex;
         flex-direction: column;
         gap: 0;
-        padding: 0px 0px 0;
+        margin: 0;
+        padding: 0px 10px 0;
     }
-    .roomnames button {
-        transform: translate(-5px, 27px);
+    .roomnames p{
+        margin: 2px;
     }
-    .acInfo{
+
+    .quote {
+        height: 70%;
+    }
+
+    .filters img {
+        border-radius: 10px;
+        width: 200px;
+    }
+
+    .searchPlace {
+        transform: translate(0, -20px);
+    }
+
+    .filters {
+        width: 100%;
+        flex-direction: row;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        padding: 25px 40px 15px 0;
+    }
+
+    .roomsAndPlace {
+        width: 90%;
+        margin-top: 40px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .rooms {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .quote p {
         display: none;
     }
-    .nav{
+
+    .acInfo {
         display: none;
     }
+
+    .nav {
+        display: none;
+    }
+
     .nav ul {
         display: none;
     }
+
     .topSec h2 {
         font-size: 26px;
         font-weight: 500;
     }
-    .topSec img{
+
+    .topSec img {
         width: 50px;
     }
-    .toggle{
+
+    .toggle {
         visibility: visible;
         position: relative;
         height: 35px;
         margin: 0 7px;
-        transform: translate(-25px,10px);
+        transform: translate(-25px, 10px);
     }
-    .offCanBut{
+
+    .offCanBut {
         display: flex;
         flex-direction: column;
         gap: 10px;
     }
-    .offCanBut ul{
+
+    .offCanBut ul {
         list-style-type: none;
-        transform: translate(-25px,0);
+        transform: translate(-25px, 0);
     }
-    .offCanBut ul a{
+
+    .offCanBut ul a {
         padding: 10px 10px;
         text-decoration: none;
         display: block;
         background-color: rgb(224, 222, 222);
     }
-    .offCanBut ul li{
+
+    .offCanBut ul li {
         padding: 10px 0;
         display: block;
-        
+
     }
 }
