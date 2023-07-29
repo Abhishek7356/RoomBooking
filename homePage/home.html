@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Booking</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon"
+        href="https://th.bing.com/th/id/R.361f03377948ef76c6113284939f1f03?rik=Kw%2bdWTC3Sdz%2bBQ&riu=http%3a%2f%2fmrrmusic.com%2fwp-content%2fuploads%2f2014%2f07%2fRoom-logo.png&ehk=k3fxqttRaTr7KnhhNhFzc6vkkzW3dp%2bHJkm233lE%2fd0%3d&risl=&pid=ImgRaw&r=0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href='https://fonts.googleapis.com/css?family=BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif'
+        rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <a class="toggle btn btn-light" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+            aria-controls="offcanvasExample">
+            <i class="fa-solid fa-bars"></i>
+        </a>
+
+        <div class="offcanvas offcanvas-start w-75" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Room Booking</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offCanBut offcanvas-body">
+                <ul>
+                    <li><a  href="#">Home</a></li>
+                    <li><a href="#">Rooms</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Sign in</a></li>
+                    <li><a href="#">Register</a></li>
+                    <li><a href="#">Profile</a></li>
+                </ul>
+            </div>
+        </div>
+        <section class="headerSec">
+            <div class="topSec">
+                <h2 style="font-family: 'BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif'">
+                    <img width="70px" style="background-color: white; border-radius: 20px; margin-right: 10px;"
+                        src="https://th.bing.com/th/id/R.361f03377948ef76c6113284939f1f03?rik=Kw%2bdWTC3Sdz%2bBQ&riu=http%3a%2f%2fmrrmusic.com%2fwp-content%2fuploads%2f2014%2f07%2fRoom-logo.png&ehk=k3fxqttRaTr7KnhhNhFzc6vkkzW3dp%2bHJkm233lE%2fd0%3d&risl=&pid=ImgRaw&r=0"
+                        alt=""> Room Booking
+                </h2>
+                <div class="acInfo">
+                    <a href="#" class="mt-1"><button type="button" class="btn btn-outline-light">Services</button></a>
+                    <a href="#"><i class="fa-solid fa-user"></i></a>
+                    <a href="#" class="mt-1"><button type="button" class="btn btn-outline-light">Sign in</button></a>
+                    <a href="#" class="mt-1"><button type="button" class="btn btn-outline-light">Register</button></a>
+                </div>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Rooms</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </section>
+    </header>
+    <section class="introSec">
+        <div class="introContent">
+            <div class="quote">
+                <h3>A comfortable room is key <br>to a great stay.</h3>
+                <p>Discover dreamy beach houses, cabins & more</p>
+            </div>
+            <div class="searchPlace">
+                <input type="search" placeholder="Place">
+                <input type="date" placeholder="Check-in">
+                <input type="number" placeholder="Number of Rooms">
+                <button>Search</button>
+            </div>
+        </div>
+    </section>
+    <section class="roomsSec">
+        <div class="roomsAndPlace">
+            <div class="filters">
+                <div class="stayType">
+                    <h5>Hotels</h5>
+                    <img src="https://r-xx.bstatic.com/xdata/images/xphoto/263x210/57584488.jpeg?k=d8d4706fc72ee789d870eb6b05c0e546fd4ad85d72a3af3e30fb80ca72f0ba57&o="
+                        alt="" width="100%">
+                </div>
+                <div class="stayType">
+                    <h5>Apartments</h5>
+                    <img src="https://r-xx.bstatic.com/xdata/images/hotel/263x210/119467716.jpeg?k=f3c2c6271ab71513e044e48dfde378fcd6bb80cb893e39b9b78b33a60c0131c9&o="
+                        alt="" width="100%">
+                </div>
+                <div class="stayType">
+                    <h5>Resorts</h5>
+                    <img src="https://r-xx.bstatic.com/xdata/images/xphoto/263x210/45450084.jpeg?k=f8c2954e867a1dd4b479909c49528531dcfb676d8fbc0d60f51d7b51bb32d1d9&o="
+                        alt="" width="100%">
+                </div>
+                <div class="stayType">
+                    <h5>Villas</h5>
+                    <img src="https://q-xx.bstatic.com/xdata/images/hotel/263x210/100235855.jpeg?k=5b6e6cff16cfd290e953768d63ee15f633b56348238a705c45759aa3a81ba82b&o="
+                        alt="" width="100%">
+                </div>
+                <div class="stayType">
+                    <h5>Hostels</h5>
+                    <img src="https://q-xx.bstatic.com/xdata/images/xphoto/263x210/45450082.jpeg?k=beb101b827a729065964523184f4db6cac42900c2415d71d516999af40beb7aa&o="
+                        alt="" width="100%">
+                </div>
+            </div>
+            <div class="rooms">
+                <h3>The joy of home.
+                    The thrill of travel.</h3>
+                <h5
+                    style="letter-spacing: 1px; margin-left: 20px; font-size: 16px; font-family: 'Montserrat'; color: rgb(223, 173, 81);">
+                    Kerala recommented places</h5>
+                <div class="roomPlaces">
+                    <div>
+                        <img src="https://cf.bstatic.com/xdata/images/city/750x400/684720.jpg?k=fdb1d9397eeb9b17d4a1ef6fdf806e6b4366d5ebda38d7f0c212b9c1bec8dcea&o="
+                            alt="" width="80px">
+                        <p>Munnar</p>
+                    </div>
+                    <div>
+                        <img src="https://cf.bstatic.com/xdata/images/city/750x400/684514.jpg?k=94a24874ade1e734dd61fa72b85a246a86a682b1e6e8a0e257cf82ad151ed1f0&o="
+                            alt="" width="80px">
+                        <p>Allepey</p>
+                    </div>
+                    <div>
+                        <img src="https://cf.bstatic.com/xdata/images/city/750x400/909116.jpg?k=2238c4373299fc44987d5bcbaf22e1531bf66ec22026cc7582b3c77b43ffe8d4&o="
+                            alt="" width="80px">
+                        <p>Vagamon</p>
+                    </div>
+                    <div>
+                        <img src="https://cf.bstatic.com/xdata/images/city/750x400/954885.jpg?k=b9ca0dba1404585ad6c2aef0b3935cca1f6ae1257bc14b7f02a67a6cb3ec718d&o="
+                            alt="" width="80px">
+                        <p>Cherai Beach</p>
+                    </div>
+                </div>
+                <div class="roomDetails">
+                    <div class="roomImg">
+                        <img src="https://cf.bstatic.com/xdata/images/hotel/square600/219785501.webp?k=3829b591a0b95a97dfa64b0462333a7424f18e285be800cbe816e63ede4937df&o="
+                            alt="">
+                    </div>
+                    <div class="roomnames">
+                        <h2>Orchid Trails Resort</h2>
+                        <div>
+                            <i class="fa-solid fa-star" style="color: #d5e21d;"></i> <i class="fa-solid fa-star"
+                                style="color: #d5e21d;"></i> <i class="fa-solid fa-star" style="color: #d5e21d;"></i> <i
+                                class="fa-solid fa-star" style="color: #d5e21d;"></i><i
+                                class="fa-solid fa-star-half-stroke" style="color: #d5e21d;"></i> <span
+                                class="badge bg-secondary">4.5</span>
+                        </div>
+                        <p>Ernakulam</p>
+                        <div class="facility">
+                            <i class="fa-solid fa-check" style="color: #25ef57;"></i>
+                            <p>Free cancellation</p>
+                        </div>
+                        <div class="facility">
+                            <i class="fa-solid fa-check" style="color: #25ef57;"></i>
+                            <p>No prepayment needed</p>
+                        </div>
+                        -/30,000 per Month
+                        <button type="button" class="btn btn-primary">Check Availability</button>
+                    </div>
+                </div>
+                <div class="roomDetails">
+                    <div class="roomImg">
+                        <img src="https://cf.bstatic.com/xdata/images/hotel/square600/449443423.webp?k=98ed1371f4348881623420245b74875a215beb3795bde11ae4c674ce0570dcf5&o="
+                            alt="">
+                    </div>
+                    <div class="roomnames">
+                        <h2>Estuary Sarovar Portico</h2>
+                        <div>
+                            <i class="fa-solid fa-star" style="color: #d5e21d;"></i><i class="fa-solid fa-star"
+                                style="color: #d5e21d;"></i> <i class="fa-solid fa-star" style="color: #d5e21d;"></i> <i
+                                class="fa-solid fa-star" style="color: #d5e21d;"></i> <span
+                                class="badge bg-secondary">4.1</span>
+                        </div>
+                        <p>Ernakulam</p>
+                        <div class="facility">
+                            <i class="fa-solid fa-check" style="color: #25ef57;"></i>
+                            <p>Free cancellation</p>
+                        </div>
+                        <div class="facility">
+                            <i class="fa-solid fa-check" style="color: #25ef57;"></i>
+                            <p>No prepayment needed</p>
+                        </div>
+                        -/45,000 per Month
+
+                        <button type="button" class="btn btn-primary">Check Availability</button>
+                    </div>
+                </div>
+                <div class="roomDetails">
+                    <div class="roomImg">
+                        <img src="https://cf.bstatic.com/xdata/images/hotel/square600/393332894.webp?k=3c2569f91e6dac52b6f539ad3ab86a6e90346db82a1866c47b5f6be35779f8f0&o="
+                            alt="">
+                    </div>
+                    <div class="roomnames">
+                        <h2>Dreamotel Luxury Suites and Rooms</h2>
+                        <div>
+                            <i class="fa-solid fa-star" style="color: #d5e21d;"></i> <i class="fa-solid fa-star"
+                                style="color: #d5e21d;"></i> <i class="fa-solid fa-star" style="color: #d5e21d;"></i> <i
+                                class="fa-solid fa-star" style="color: #d5e21d;"></i><i
+                                class="fa-solid fa-star-half-stroke" style="color: #d5e21d;"></i> <span
+                                class="badge bg-secondary">4.7</span>
+                        </div>
+                        <p>Ernakulam</p>
+                        <div class="facility">
+                            <i class="fa-solid fa-check" style="color: #25ef57;"></i>
+                            <p>Free cancellation</p>
+                        </div>
+                        <div class="facility">
+                            <i class="fa-solid fa-check" style="color: #25ef57;"></i>
+                            <p>No prepayment needed</p>
+                        </div>
+                        -/40,000 per Month
+
+                        <button type="button" class="btn btn-primary">Check Availability</button>
+                    </div>
+                </div>
+                <div class="roomDetails">
+                    <div class="roomImg">
+                        <img src="https://cf.bstatic.com/xdata/images/hotel/square600/403688067.webp?k=e9b2a3ad88bb0edf96c79f50c97a46eb5927b02f958ecfe391b84d423f3de6f4&o="
+                            alt="">
+                    </div>
+                    <div class="roomnames">
+                        <h2>KGA Elite Continental Hotel</h2>
+                        <div>
+                            <i class="fa-solid fa-star" style="color: #d5e21d;"></i> <i class="fa-solid fa-star"
+                                style="color: #d5e21d;"></i> <i class="fa-solid fa-star" style="color: #d5e21d;"></i> <i
+                                class="fa-solid fa-star" style="color: #d5e21d;"></i><i
+                                class="fa-solid fa-star-half-stroke" style="color: #d5e21d;"></i> <span
+                                class="badge bg-secondary">4.6</span>
+                        </div>
+                        <p>Ernakulam</p>
+                        <div class="facility">
+                            <i class="fa-solid fa-check" style="color: #25ef57;"></i>
+                            <p>Free cancellation</p>
+                        </div>
+                        <div class="facility">
+                            <i class="fa-solid fa-check" style="color: #25ef57;"></i>
+                            <p>No prepayment needed</p>
+                        </div>
+                        -/35,000 per Month
+
+                        <button type="button" class="btn btn-primary">Check Availability</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="text-center text-white" style="background-color:rgb(0 59 149)">
+        <!-- Grid container -->
+        <div class="container pt-4">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-link btn-floating btn-lg text-white m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
+
+                <!-- Twitter -->
+                <a class="btn btn-link btn-floating btn-lg text-white m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i></a>
+
+                <!-- Google -->
+                <a class="btn btn-link btn-floating btn-lg text-white m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-google"></i></a>
+
+                <!-- Instagram -->
+                <a class="btn btn-link btn-floating btn-lg text-white m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
+
+                <!-- Linkedin -->
+                <a class="btn btn-link btn-floating btn-lg text-white m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-linkedin"></i></a>
+                <!-- Github -->
+                <a class="btn btn-link btn-floating btn-lg text-white m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-github"></i></a>
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2020 Copyright:
+            <a class="text-white" href="#">Roombooking.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+</body>
+
+</html>
